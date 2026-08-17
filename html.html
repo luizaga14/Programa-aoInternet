@@ -8,6 +8,15 @@
         h1{ color: blueviolet;}
         h1{ font-size: 2.5em}
         span{font-size: 1.5em;}
+        section{
+            border: 2px dotted blueviolet;;
+        }
+        div{
+            background-color: #1a9;
+        }
+        table, td{border: 1px solid black;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
@@ -21,23 +30,117 @@
     </a>
         para compartilharmos um documento no <br>CERN
     </p>
-        <img src="cern.jpg">
+        <img draggable src="cern.png">
+        <git add src = "cern.png">
     
     <div>
+        <hr>
+        
     <h2> Arquitetura Cliente servidor da WEB </h2>
     <p> As tecnologias fundamentais que compoem a WEB são: </p>
     <ul>
         <li> Aquitetura Cliente Servidor </li>
-        <Li> HTTP - Hyper Text Transfer Protocol </Li>
-        <li> HTML - Hyper Text Markuo Language </li>
-        <li> Navegador Cliente - </li>
+        <Li> <mark> HTTP</mark> - Hyper Text Transfer Protocol </Li>
+        <li> HTML - Hyper Text Markuo Language <DEL> É UMA LINGUAGEM DE PROGRAMAÇÃO</DEL> <sub> total</sub></li>
+        <li> Navegador Cliente - </li>  
         <li> Servidor Web </li>
     </ul>
-    <img src="httpi.png"> 
+
+     <hr>
     </div>
 
     <p> Ao longo dos anos foi a web que evoluiu e novas
      tecnologias foram incorporadas como <span> CSS </span> e <span> JavaScript </span> </p>
 
+      <hr>
+
+      <p> a = ax + bx<sup> +c</sup></p>
+      <hr>
+
+      <section id ="listas">
+
+         <p>
+            O HTML possui listas não ordenadas, ordenadas e detalhjadas, criada com as tangs ul ol dl
+        </p>
+
+        <p>Lista não Ordenada</p>
+        <ul>
+            <li>Maçâ</li>
+            <li>Uva</li>
+            <li>Banana</li>
+        </ul>
+
+        <p>Lista Ordenada</p>
+        <ol type = "a" start = "3">
+            <li>cereal</li>
+            <li>nescau</li>
+            <li>batata frita</li>
+        </ol>
+
+        <dl>
+            <dt>leite</dt>
+            <dd>Bebida nutritiva extraída de mamíferos</dd>
+
+            <dt>Café</dt>
+            <dd>Bebida obtida com a torra e fervura do grão de café</dd>
+
+            <dt>Vinho</dt>
+            <dd>Bebida feita de uvas</dd>
+        </dl>
+      </section>
+      <section id = "tabelas">
+        <p> o html fornece suporte a tabelas por meio de tag tabl, 
+        e outra tags, como tag &lt td &gt <i> table data </i></p>
+        <table> 
+            <caption> Churrasco Fim</caption>
+            <tr>
+                <td>Categoria </td>
+                <td>indice </td>
+                <td>nome </td>
+                <td>valor </td>
+            </tr>
+            <tr>
+                <td>churras</td>
+                <td>1</td>
+                <td>carne</td>
+                <td>50,00</td>
+            </tr>
+            <tr>
+                <td>churras</td>
+                <td>2</td>
+                <td>carvão</td>
+                <td>30,00</td>
+            </tr>
+            <tr>
+                <td>churras</td>
+                <td>1</td>
+                <td>linguinça blumenau </td>
+                <td>80,00</td>
+            </tr>
+            <tr>
+                <td>bebida</td>
+                <td>4</td>
+                <td>Água com gás</td>
+                <td>15,00</td>
+            </tr>
+            <tr>
+                <td>bebida</td>
+                <td>1</td>
+                <td>Refrigrante</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>doces</td>
+                <td>1</td>
+                <td>Cuca de chocolate </td>
+                <td>25,00</td>
+            </tr>
+            <tr>
+                <td colspan = "3">total</td>
+                <td>210,00</td>
+            </tr>
+            
+        </table>
+      </section>
 </body>
 </html>
