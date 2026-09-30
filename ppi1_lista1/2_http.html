@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Autor: Aluno | Data: 30/09/2026 -->
+
+    <h1>Protocolo HTTP</h1>
+
+    <p>
+        O <strong>HTTP</strong> (<em>Hypertext Transfer Protocol</em>) é o protocolo usado para
+        transferir páginas web, imagens, vídeos e outros recursos entre um cliente e um servidor.
+        Quando você acessa um site no navegador, ele envia uma requisição HTTP para o servidor,
+        que responde com o conteúdo solicitado.
+    </p>
+
+    <img src="http.jpg" alt="Imagem ilustrativa do protocolo HTTP" width="300">
+
+    <h2>Como o HTTP é usado na Web</h2>
+
+    <p>
+        O navegador envia uma mensagem de requisição ao servidor usando métodos como
+        <strong>GET, POST, PUT e DELETE</strong>. O servidor interpreta a requisição e
+        E devolve uma resposta HTTP com dados, páginas, arquivos ou mensagens de erro.
+    </p>
+
+    <img src="servidor.jpg" alt="Servidor web e dados" width="600">
+
+    <h3>Exemplo de requisição HTTP</h3>
+
+    <pre>
+GET /index.html HTTP/1.1
+Host: www.exemplo.com
+User-Agent: Mozilla/5.0
+Accept: text/html
+Connection: keep-alive
+    </pre>
+
+    <p>
+        Nesse exemplo, o cliente solicita a página <strong>/index.html</strong> no site
+        <strong>www.exemplo.com</strong>. O navegador informa também o tipo de conteúdo que aceita.
+    </p>
+
+    <h3>Exemplo de resposta HTTP</h3>
+
+    <pre>
+HTTP/1.1 200 OK
+Date: Wed, 30 Sep 2026 12:00:00 GMT
+Server: Apache/2.4
+Content-Type: text/html; charset=UTF-8
+Content-Length: 1234
+
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>Principais campos de um Request</h2>
+
+    <ul>
+        <li><strong>Method</strong>: indica a ação, como GET ou POST.</li>
+        <li><strong>URL</strong>: endereço do recurso solicitado.</li>
+        <li><strong>Host</strong>: nome do servidor.</li>
+        <li><strong>User-Agent</strong>: informa o navegador ou cliente.</li>
+        <li><strong>Accept</strong>: tipos de conteúdo aceitos pelo cliente.</li>
+        <li><strong>Connection</strong>: controla a conexão com o servidor.</li>
+    </ul>
+
+    <h2>Principais campos de um Response</h2>
+
+    <ul>
+        <li><strong>Status code</strong>: indica o resultado, como 200 OK ou 404 Not Found.</li>
+        <li><strong>Date</strong>: data e hora da resposta.</li>
+        <li><strong>Server</strong>: software do servidor.</li>
+        <li><strong>Content-Type</strong>: tipo do conteúdo retornado.</li>
+        <li><strong>Content-Length</strong>: tamanho do corpo da resposta.</li>
+        <li><strong>Body</strong>: conteúdo da página ou arquivo.</li>
+    </ul>
+</body>
+</html>
